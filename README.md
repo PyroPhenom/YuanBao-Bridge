@@ -4,15 +4,15 @@
 
 通过 Chrome DevTools Protocol (CDP) 在已登录的元宝聊天页面内执行 JavaScript，复用客户端内置的 `ybChatService` 发起对话，无需单独维护 Cookie 或 Token。
 
-与本项目思路相近的 Web 端实现可参考 [juzeon/yuanbao-chat2api](https://github.com/juzeon/yuanbao-chat2api)。
-
 ## 免责声明
 
 **本项目仅供学习研究用途，请于下载后 24 小时删除。**
 
 **本项目不接受任何资金捐助和交易，此项目是纯粹研究交流学习性质。**
 
-**仅限自用，禁止对外提供服务或商用，避免对官方造成服务压力，否则风险自担。**
+**禁止将本项目用于任何盈利或商业行为**（包括但不限于对外提供服务、收费代调用、集成至商业产品或 SaaS、广告变现等）。
+
+**仅限个人学习研究自用，禁止对外提供服务或商用，避免对官方造成服务压力，否则风险自担。**
 
 **因本项目造成的风险或损失，开发者不承担任何法律责任。**
 
@@ -28,7 +28,6 @@
 
 - 自动从 `yuanbao.exe` 生成带远程调试端口的 `yuanbao-debug.exe`
 - 自动启动元宝并等待聊天页就绪
-- **CDP 自动检测**当前聊天页的 `agentId` 与 `model`（无需硬编码配置）
 - 文本对话、深度思考模式
 - 图片对话（Base64 / URL / 本地上传 / multipart）
 - OpenAI 兼容的 `/v1/chat/completions` 端点
